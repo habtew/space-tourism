@@ -1,9 +1,11 @@
 // import react from 'react'
-import './App.css'
+import Home from './components/home'
 
+import './App.css'
+import './styles/Nav.css'
 function App() {
   return (
-    <h1>Hello</h1>
+    <Home />
   )
 }
 
