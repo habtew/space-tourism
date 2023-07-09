@@ -1,12 +1,18 @@
 // import react from 'react'
 import Home from './components/home'
+import Destination from './components/destination'
 
 import './App.css'
 import './styles/Nav.css'
 import './styles/Hero.css'
+import './styles/destination.css'
+// <Home />
 function App() {
   return (
-    <Home />
+    <>
+    <Destination />
+    </>
+
   )
 }
 
