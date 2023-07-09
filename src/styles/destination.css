@@ -1,0 +1,99 @@
+.destination--main{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.destination--hero p{
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+.destination--hero p span{
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    letter-spacing: 2.7px;
+}
+
+.destination--hero img{
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+
+
+.destination--section--header{
+    display: flex;
+    text-transform: uppercase;
+    color: #D0D6F9;
+    font-family: Barlow Condensed;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+}
+
+.destination--section--header li{
+    margin-right: 10px;
+    margin-left:0;
+}
+
+.destinatin--section--title{
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.destinatin--section--detail{
+    color: #D0D6F9;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.hr{
+    max-width: 100%;
+    flex-shrink: 0;
+    background: #383B4B;
+}
+
+
+.destination--info p{
+    color: hsl(231, 77%, 90%);
+    text-align: center;
+    font-family: Barlow Condensed;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+}
+
+.destination--info h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
