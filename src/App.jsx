@@ -8,6 +8,7 @@ import './App.css'
 import './styles/Nav.css'
 import './styles/Hero.css'
 import './styles/destination.css'
+import './styles/Crew.css'
 // <Destination />
 // <Home />
 function App() {
