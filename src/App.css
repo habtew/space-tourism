@@ -37,3 +37,11 @@ ul{
   background-size: cover;
   color: white;
 }
+
+.technology{
+  background: url('../public/technology/background-technology-mobile.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
