@@ -3,6 +3,9 @@ body{
   margin: 0 auto;
   border: 1px solid black;
   font-size: 16px;
+
+
+  height: 100vh;
 }
 
 img{
@@ -39,9 +42,9 @@ ul{
 }
 
 .technology{
-  background: url('../public/technology/background-technology-mobile.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
+    background: url('../public/technology/background-technology-mobile.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white
 }
