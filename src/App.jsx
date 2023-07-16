@@ -13,11 +13,11 @@ import './styles/Crew.css'
 import './styles/technology.css'
 // <Destination />
 // <Home />
-// <Crew /> 
+// <Technology />
 function App() {
   return (
     <>
-      <Technology />
+    <Crew /> 
     </>
 
   )
