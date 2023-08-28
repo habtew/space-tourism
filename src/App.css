@@ -1,11 +1,13 @@
+*{
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+
 body{
   /* width: 250px; */
   margin: 0 auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-size: 16px;
-
-
-  height: 100vh;
 }
 
 img{
@@ -16,13 +18,13 @@ ul{
   list-style-type: none;
   padding: 0;
 }
-
 .home{
   background: url('../public/home/background-home-mobile.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  /* height: 100vh; */
 }
 
 .destination{
@@ -31,6 +33,7 @@ ul{
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  /* height: 100vh; */
 }
 
 .crew{
@@ -39,12 +42,15 @@ ul{
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  /* height: 100vh; */
 }
+
 
 .technology{
     background: url('../public/technology/background-technology-mobile.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white
+    color: white;
+    /* height: 100vh; */
 }

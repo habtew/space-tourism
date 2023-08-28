@@ -17,7 +17,7 @@ import './styles/technology.css'
 function App() {
   return (
     <>
-     <Technology />
+     <Destination />
     </>
 
   )

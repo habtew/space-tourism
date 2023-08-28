@@ -42,6 +42,7 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 1.5px;
+    justify-content: center;
 }
 
 .destination--section--header li{

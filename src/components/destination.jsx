@@ -1,6 +1,9 @@
 import Nav from "./nav"
+import data from '../data/destinationdata'
 
 export default function Destination(){
+
+    console.log(data.moon)
     return (
         <div className="destination">
             <Nav />
