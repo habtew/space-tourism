@@ -1,6 +1,6 @@
 import React from "react"
 import Nav from "./nav"
-import data from '../data/destinationdata'
+import {destinationData} from '../data/destinationdata'
 import Comp from "./destinationcomponent"
 export default function Destination(){
 
@@ -58,7 +58,7 @@ export default function Destination(){
                         </div>
                     </div> */}
                     <Comp 
-                        data= {data}
+                        data= {destinationData}
                         id = {id}
                     />
                 </div>
