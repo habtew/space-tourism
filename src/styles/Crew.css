@@ -20,7 +20,21 @@
     height: 2px;;
 }
 
+.crew--list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
 
+.crew--list--item{
+    border: 1px solid white;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    padding: .71em;
+    cursor: pointer;
+}
 
 .crew--section--header{
     list-style-type: disc;
