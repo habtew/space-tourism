@@ -20,6 +20,22 @@
     border: none;
     height: 2px;;
 }
+.techno--list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.techno--list--item{
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: .71em;
+    cursor: pointer;
+}
+
 
 
 
