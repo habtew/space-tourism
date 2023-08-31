@@ -1,10 +1,7 @@
 import Nav from "./nav";
 import React from 'react'
-import TechnoComponent from "./technologyComponent";
-import { technologyData } from "../data/destinationdata";
 
 export default function Technology(props){
-    // console.log(props)
     const data = props.data
     const [id, setId] = React.useState("one")
 
@@ -34,11 +31,6 @@ export default function Technology(props){
                     <p className="technology--section--detail">{data[id].descr}</p>
                 </div>
 
-
-                {/* <TechnoComponent 
-                        data = {technologyData} 
-                        id = {id}
-                    /> */}
             </div>
         </div>
     )

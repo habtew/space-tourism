@@ -7,7 +7,6 @@ export default function Crew(props){
     function handleClick(e){
         setId(e.target.id)
     }
-    console.log(id)
 
     return (
         <div className="crew">
