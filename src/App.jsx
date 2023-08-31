@@ -1,11 +1,13 @@
 // import react from 'react'
 import React from 'react';
 import { BrowserRouter as Router,Routes ,Route } from 'react-router-dom';
+import { crewData, technologyData, destinationData} from './data/destinationdata';
 import Home from './components/home'
 import Destination from './components/destination'
 import Crew from './components/crew'
 import Technology from './components/technology'
 import Nav from './components/nav';
+
 import './App.css'
 import './styles/Nav.css'
 import './styles/Hero.css'
@@ -20,9 +22,15 @@ function App() {
     <Router>
     <Routes>
       <Route path="/home" element={<Home />} />
-      <Route path="/crew" element={<Crew />} />
-      <Route path="/technology" element={<Technology />} />
-      <Route path="/destination" element={<Destination />} />
+      <Route path="/crew" element={<Crew 
+          data = {crewData}
+      />} />
+      <Route path="/technology" element={<Technology 
+          data = {technologyData}
+      />} />
+      <Route path="/destination" element={<Destination 
+          data = {destinationData}
+      />} />
       {/* default  */}
       <Route path="*" element={<Home />} />
     </Routes>

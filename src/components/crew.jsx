@@ -1,30 +1,13 @@
 import Nav from "./nav"
 import React from "react"
-import CrewComponent from "./crewComponent"
-import { crewData } from "../data/destinationdata"
 
-export default function Crew(){
+export default function Crew(props){
+    const data = props.data
     const [id, setId] = React.useState("one")
     function handleClick(e){
         setId(e.target.id)
     }
-
-
-
-    const images = [
-        {
-            url: "",
-            breakwidth: ""
-        },
-        {
-            url: "",
-            breakwidth: ""
-        },
-        {
-            url: "",
-            breakwidth: ""
-        }
-    ]
+    console.log(id)
 
     return (
         <div className="crew">
@@ -32,7 +15,7 @@ export default function Crew(){
             <div className="crew--main">
                 <div className="crew--hero">
                     <p><span>01 </span>meet your crew</p>
-                    <img src="../public/destination/image-moon.webp" alt="moon image" />
+                    <img src={data[id].img} alt="moon image" />
                 </div>
                 <hr className="hr"/>
                 
@@ -45,10 +28,11 @@ export default function Crew(){
                     </ul>
                 </div>
 
-                <CrewComponent 
-                    data = {crewData}
-                    id = {id}
-                />
+                <div className="crew--section">
+                    <h4 className="crew--section--title">{data[id].title}</h4>
+                    <h1 className="crew--section--name">{data[id].name}</h1>
+                    <p className="crew--section--detail">{data[id].descr}</p>
+             </div>
             </div>
         </div>
     )
