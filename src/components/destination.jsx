@@ -2,11 +2,8 @@ import React from "react"
 import Nav from "./nav"
 import {destinationData} from '../data/destinationdata'
 import Comp from "./destinationcomponent"
-export default function Destination(){
-
-    // console.log(data.moon)
-    // let data2 = "moon"
-    // let id = "moon"
+export default function Destination(props){
+    const data = props.data
     const [id, setId] = React.useState("moon")
     function handleClick(e)
     {
@@ -21,7 +18,7 @@ export default function Destination(){
             <div className="destination--main">
                 <div className="destination--hero">
                     <p><span>01 </span>Pick your destination</p>
-                    <img src="../public/destination/image-moon.webp" alt="moon image" />
+                    <img src={data[id].img} alt="moon image" />
                 </div>
                 <div className="destination--section">
                     <ul 
@@ -43,24 +40,24 @@ export default function Destination(){
                             >TITAN</li>
                     </ul>
 
-                    {/* <h1 className="destinatin--section--title">{data.moon.title}</h1>
-                    <p className="destination--section--detail">{data.moon.par}</p>
+                    <h1 className="destinatin--section--title">{data[id].title}</h1>
+                    <p className="destination--section--detail">{data[id].par}</p>
                     <hr className="hr"/>
                     <div className="destination--info">
                         <div>
                             <p className="destination-info--p">AVG. DISTANCE</p>
-                            <h1 className="destinationn--info--h1">{data.moon.dist}</h1>
+                            <h1 className="destinationn--info--h1">{data[id].dist}</h1>
                         </div>
 
                         <div>
                             <p>AVG. DISTANCE</p>
-                            <h1>{data.moon.time}</h1>
+                            <h1>{data[id].time}</h1>
                         </div>
-                    </div> */}
-                    <Comp 
+                    </div>
+                    {/* <Comp 
                         data= {destinationData}
                         id = {id}
-                    />
+                    /> */}
                 </div>
             </div>
         </div>
