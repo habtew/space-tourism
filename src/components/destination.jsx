@@ -1,17 +1,16 @@
 import React from "react"
 import Nav from "./nav"
-import {destinationData} from '../data/destinationdata'
-import Comp from "./destinationcomponent"
+
 export default function Destination(props){
     const data = props.data
     const [id, setId] = React.useState("moon")
+    
     function handleClick(e)
     {
-        // id = e.target.id
         setId(e.target.id)
-        // data2 = e.target.id
-        // console.log(e.target.id)
     }
+
+
     return (
         <div className="destination">
             <Nav />
@@ -54,10 +53,6 @@ export default function Destination(props){
                             <h1>{data[id].time}</h1>
                         </div>
                     </div>
-                    {/* <Comp 
-                        data= {destinationData}
-                        id = {id}
-                    /> */}
                 </div>
             </div>
         </div>
