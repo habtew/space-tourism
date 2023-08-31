@@ -9,6 +9,23 @@ export default function Crew(){
         setId(e.target.id)
     }
 
+
+
+    const images = [
+        {
+            url: "",
+            breakwidth: ""
+        },
+        {
+            url: "",
+            breakwidth: ""
+        },
+        {
+            url: "",
+            breakwidth: ""
+        }
+    ]
+
     return (
         <div className="crew">
             <Nav />
