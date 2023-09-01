@@ -5,6 +5,40 @@ export default function Destination(props){
     const data = props.data
     const [id, setId] = React.useState("moon")
     
+    const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
+
+    const backgrounds = [
+        {url:"/destination/background-destination-mobile.jpg", breakpoint: 500},
+        {url: "/destination/background-destination-tablet.jpg", breakpoint: 700},
+        {url:"/destination/background-destination-desktop.jpg", breakpoint: 1000},
+    ]
+
+    React.useEffect(()=>{
+        const hanldeResize = () => {
+            setWindowWidth(window.innerWidth)
+        };
+
+        window.addEventListener('resize', hanldeResize);
+
+        return ()=>{
+            window.removeEventListener('resize', hanldeResize)
+        }
+    }, [])
+
+    const getBackgroundForWidth = () => {
+        const matchingBackground = backgrounds.find(background => windowWidth < background.breakpoint);
+        return matchingBackground ? matchingBackground.url : backgrounds[backgrounds.length - 1].url;
+      };
+
+      const backgroundImageUrl = getBackgroundForWidth();
+      const backgroundStyle = {
+        backgroundImage: `url(${backgroundImageUrl})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        // width: '100vw',
+        // height: '100vh',
+     };
+
     function handleClick(e)
     {
         setId(e.target.id)
@@ -12,7 +46,7 @@ export default function Destination(props){
 
 
     return (
-        <div className="destination">
+        <div className="destination" style={backgroundStyle}>
             <Nav />
             <div className="destination--main">
                 <div className="destination--hero">
