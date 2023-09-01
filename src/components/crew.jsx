@@ -4,12 +4,46 @@ import React from "react"
 export default function Crew(props){
     const data = props.data
     const [id, setId] = React.useState("one")
+    
+    const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
+
+    const backgrounds = [
+        {url:"/crew/background-crew-mobile.jpg", breakpoint: 500},
+        {url: "/crew/background-crew-tablet.jpg", breakpoint: 700},
+        {url:"/crew/background-crew-desktop.jpg", breakpoint: 1000},
+    ]
+
+    React.useEffect(()=>{
+        const hanldeResize = () => {
+            setWindowWidth(window.innerWidth)
+        };
+
+        window.addEventListener('resize', hanldeResize);
+
+        return ()=>{
+            window.removeEventListener('resize', hanldeResize)
+        }
+    }, [])
+
+    const getBackgroundForWidth = () => {
+        const matchingBackground = backgrounds.find(background => windowWidth < background.breakpoint);
+        return matchingBackground ? matchingBackground.url : backgrounds[backgrounds.length - 1].url;
+      };
+
+      const backgroundImageUrl = getBackgroundForWidth();
+      const backgroundStyle = {
+        backgroundImage: `url(${backgroundImageUrl})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        // width: '100vw',
+        // height: '100vh',
+     };
+    
     function handleClick(e){
         setId(e.target.id)
-    }
-
-    return (
-        <div className="crew">
+    } 
+    return  (
+        <div className="crew" style={backgroundStyle}>
             <Nav />
             <div className="crew--main">
                 <div className="crew--hero">
