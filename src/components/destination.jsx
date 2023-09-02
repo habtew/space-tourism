@@ -1,5 +1,5 @@
 import React from "react"
-// import Nav from "./nav"
+import Nav from "./nav"
 
 export default function Destination(props){
     const data = props.data
@@ -47,7 +47,7 @@ export default function Destination(props){
 
     return (
         <div className="destination" style={backgroundStyle}>
-            {/* <Nav /> */}
+            <Nav />
             <div className="destination--main">
                 <div className="destination--hero">
                     <p><span>01 </span>Pick your destination</p>

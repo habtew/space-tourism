@@ -1,4 +1,4 @@
-// import Nav from "./nav"
+import Nav from "./nav"
 import React from "react"
 
 export default function Crew(props){
@@ -44,7 +44,7 @@ export default function Crew(props){
     } 
     return  (
         <div className="crew" style={backgroundStyle}>
-            {/* <Nav /> */}
+            <Nav />
             <div className="crew--main">
                 <div className="crew--hero">
                     <p><span>01 </span>meet your crew</p>

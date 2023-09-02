@@ -1,6 +1,6 @@
 import React from "react"
 
-// import Nav from "./nav"
+import Nav from "./nav"
 import Hero from "./hero"
 export default function Home(){
 
@@ -40,7 +40,7 @@ export default function Home(){
 
     return (
         <div className="home" style={backgroundStyle}>
-            {/* <Nav /> */}
+            <Nav />
             <Hero />
         </div>
     )

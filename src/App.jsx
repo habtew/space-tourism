@@ -18,55 +18,54 @@ import './styles/technology.css'
 // <Home />
 // {/* <Crew />  */}
 
-function Nav(){
-  function handleClick() {
-    document.body.classList.toggle('nav-open');
-  }
+// function Nav(){
+//   function handleClick() {
+//     document.body.classList.toggle('nav-open');
+//   }
 
-  return (
-    <header>
-      <div className="logo">
-        <img src="../public/shared/logo.svg" alt="Logo" />
-      </div>
-      <button
-        className="nav-toggle"
-        aria-label="toggle navigation"
-        onClick={handleClick}
-      >
-        <img src="../public/shared/icon-hamburger.svg" alt="Toggle Navigation" />
-      </button>
-      <nav className="nav">
-        <ul className="nav__list">
-          <li className="nav__item">
-            <Link to="/home" className="nav__link">
-              Home
-            </Link>
-          </li>
-          <li className="nav__item">
-            <Link to="/crew" className="nav__link">
-              Crew
-            </Link>
-          </li>
-          <li className="nav__item">
-            <Link to="/technology" className="nav__link">
-              Technology
-            </Link>
-          </li>
-          <li className="nav__item">
-            <Link to="/destination" className="nav__link">
-              Destination
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  );
-}
+//   return (
+//     <header>
+//       <div className="logo">
+//         <img src="../public/shared/logo.svg" alt="Logo" />
+//       </div>
+//       <button
+//         className="nav-toggle"
+//         aria-label="toggle navigation"
+//         onClick={handleClick}
+//       >
+//         <img src="../public/shared/icon-hamburger.svg" alt="Toggle Navigation" />
+//       </button>
+//       <nav className="nav">
+//         <ul className="nav__list">
+//           <li className="nav__item">
+//             <Link to="/home" className="nav__link">
+//               Home
+//             </Link>
+//           </li>
+//           <li className="nav__item">
+//             <Link to="/crew" className="nav__link">
+//               Crew
+//             </Link>
+//           </li>
+//           <li className="nav__item">
+//             <Link to="/technology" className="nav__link">
+//               Technology
+//             </Link>
+//           </li>
+//           <li className="nav__item">
+//             <Link to="/destination" className="nav__link">
+//               Destination
+//             </Link>
+//           </li>
+//         </ul>
+//       </nav>
+//     </header>
+//   );
+// }
 
 function App() {
   return (
     <Router>
-    <Nav />
     <Routes>
       <Route path="/home" element={<Home />} />
       <Route path="/crew" element={<Crew 
