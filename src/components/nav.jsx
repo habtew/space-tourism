@@ -16,7 +16,11 @@ export default function Nav() {
         aria-label="toggle navigation"
         onClick={handleClick}
       >
-        <img src="../public/shared/icon-hamburger.svg" alt="Toggle Navigation" />
+        <img 
+          src="../public/shared/icon-hamburger.svg" 
+          alt="Toggle Navigation" 
+          className='hamburger'
+          />
       </button>
       <nav className="nav">
         <ul className="nav__list">

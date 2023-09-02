@@ -55,3 +55,10 @@
     margin: 50px;
     border: none;
 }
+
+@media (min-width: 500px){
+    .hero{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
