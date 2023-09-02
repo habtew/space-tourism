@@ -1,4 +1,4 @@
-import Nav from "./nav";
+// import Nav from "./nav";
 import React from 'react'
 
 export default function Technology(props){
@@ -45,7 +45,7 @@ export default function Technology(props){
 
     return (
         <div className="technology" style={backgroundStyle}>
-            <Nav />
+            {/* <Nav /> */}
             <div className="technology--main">
                 <div className="technology--hero">
                     <p><span>03 </span>space launch 101</p>
