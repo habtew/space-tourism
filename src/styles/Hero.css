@@ -58,7 +58,7 @@
 
 @media (min-width: 500px){
     .hero{
-        max-width: 500px;
+        max-width: 450px;
         margin: 0 auto;
     }
 }
